@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class GuessGame {
 
     private int score;
-    private static GuessGame instance;
+    private static GuessGame instance = new GuessGame();
     private Random random = new Random();
     private Scanner scanner = new Scanner(System.in);
 
@@ -15,10 +15,11 @@ public class GuessGame {
     }
 
     public static GuessGame getInstance() {
-        if (instance == null) {
-            instance = new GuessGame();
-        }
         return instance;
+    }
+
+    protected Object readResolve() {
+        return getInstance();
     }
 
     public int getScore() {
