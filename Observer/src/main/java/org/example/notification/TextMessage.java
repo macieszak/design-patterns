@@ -2,8 +2,11 @@ package org.example.notification;
 
 import org.example.order.Order;
 
-public class TextMessage {
-    public void updateOrderStatus(Order order) {
-        System.out.println("SMS - zamówienie numer: " + order.getOrderNumber() + " zamieniło status na: " + order.getOrderStatus());
+public class TextMessage implements Observer {
+
+    @Override
+    public void update(Order order) {
+        System.out.println("SMS - zamówienie numer: " + order.getOrderNumber() + " zmieniło status na: " + order.getOrderStatus());
     }
+
 }
