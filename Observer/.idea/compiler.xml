@@ -6,6 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for observer-pattern" enabled="true">
+        <sourceOutputDir name="../Observer/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../Observer/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="observer-pattern" />
       </profile>
     </annotationProcessing>
