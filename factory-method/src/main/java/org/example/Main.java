@@ -10,7 +10,5 @@ public class Main {
         Unit tank = factory.createUnit(UnitType.TANK);
         Unit rifleman = factory.createUnit(UnitType.RIFLEMAN);
 
-        //Unit tank2 = new Tank(200, 0, 20);
-
     }
 }
