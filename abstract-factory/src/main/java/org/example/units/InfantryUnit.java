@@ -24,4 +24,13 @@ public abstract class InfantryUnit {
         return dmgDone;
     }
 
+    @Override
+    public String toString() {
+        return "InfantryUnit{" +
+                "hp=" + hp +
+                ", exp=" + exp +
+                ", dmgDone=" + dmgDone +
+                '}';
+    }
+
 }

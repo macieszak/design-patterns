@@ -1,12 +1,12 @@
 package org.example.units;
 
-public abstract class MechanizedUnit {
+public abstract class AirUnit {
 
     private int hp;
     private int exp;
     private int dmgDone;
 
-    protected MechanizedUnit(int hp, int exp, int dmgDone) {
+    protected AirUnit(int hp, int exp, int dmgDone) {
         this.hp = hp;
         this.exp = exp;
         this.dmgDone = dmgDone;
@@ -26,7 +26,7 @@ public abstract class MechanizedUnit {
 
     @Override
     public String toString() {
-        return "MechanizedUnit{" +
+        return "AirUnit{" +
                 "hp=" + hp +
                 ", exp=" + exp +
                 ", dmgDone=" + dmgDone +
