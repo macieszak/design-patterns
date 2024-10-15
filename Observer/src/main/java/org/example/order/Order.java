@@ -10,7 +10,6 @@ public class Order implements Observable {
     private OrderStatus orderStatus;
     private Set<Observer> registeredObservers = new HashSet<>();
 
-
     public Order(Long orderNumber, OrderStatus orderStatus) {
         this.orderNumber = orderNumber;
         this.orderStatus = orderStatus;

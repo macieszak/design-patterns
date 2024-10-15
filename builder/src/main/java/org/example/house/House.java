@@ -20,34 +20,6 @@ public class House {
         this.garage = houseBuilder.garage;
     }
 
-    public String getWalls() {
-        return walls;
-    }
-
-    public String getFloors() {
-        return floors;
-    }
-
-    public String getRooms() {
-        return rooms;
-    }
-
-    public String getRoof() {
-        return roof;
-    }
-
-    public String getWindows() {
-        return windows;
-    }
-
-    public String getDoors() {
-        return doors;
-    }
-
-    public String getGarage() {
-        return garage;
-    }
-
     @Override
     public String toString() {
         return "House{" +
