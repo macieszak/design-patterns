@@ -1,6 +1,6 @@
 package org.example;
 
-public class Terrain {
+public abstract class Terrain {
 
     private String description;
     private int fuelCost;
@@ -10,4 +10,11 @@ public class Terrain {
         this.fuelCost = fuelCost;
     }
 
+    public int getFuelCost() {
+        return fuelCost;
+    }
+
+    public String getDescription() {
+        return description;
+    }
 }
