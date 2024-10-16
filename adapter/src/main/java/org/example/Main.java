@@ -40,6 +40,5 @@ public class Main {
         continentalSocket.plugIn(twoWayAdapter);
         ukSocket.plugIn(twoWayAdapter);
 
-
     }
 }
