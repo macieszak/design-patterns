@@ -18,7 +18,14 @@ public class Main {
         UKDevice ukRadio = new UKDevice() {
             @Override
             public void powerOn() {
-                System.out.println("Music plays");
+                System.out.println("London calling to the faraway towns");
+            }
+        };
+
+        ContinentalDevice continentalRadio = new ContinentalDevice() {
+            @Override
+            public void on() {
+                System.out.println("London calling to the underworld");
             }
         };
 
@@ -26,8 +33,13 @@ public class Main {
         ukSocket.plugIn(ukRadio);
 
         UKToContinentalAdapter adapter = new UKToContinentalAdapter(ukRadio);
-
         continentalSocket.plugIn(adapter);
+
+        System.out.println("-------------");
+        TwoWayAdapter twoWayAdapter = new TwoWayAdapter(ukRadio, continentalRadio);
+        continentalSocket.plugIn(twoWayAdapter);
+        ukSocket.plugIn(twoWayAdapter);
+
 
     }
 }
