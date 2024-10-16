@@ -1,9 +1,6 @@
 package org.example;
 
-import org.example.adapter.ContinentalDevice;
-import org.example.adapter.ContinentalSocket;
-import org.example.adapter.UKDevice;
-import org.example.adapter.UKSocket;
+import org.example.adapter.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -28,7 +25,9 @@ public class Main {
         UKSocket ukSocket = new UKSocket();
         ukSocket.plugIn(ukRadio);
 
-        //continentalSocket.plugIn(ukRadio);
+        UKToContinentalAdapter adapter = new UKToContinentalAdapter(ukRadio);
+
+        continentalSocket.plugIn(adapter);
 
     }
 }
