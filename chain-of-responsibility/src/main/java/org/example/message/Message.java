@@ -14,10 +14,6 @@ public class Message {
         this.officerRank = officerRank;
     }
 
-    public Message(String content) {
-        this.content = content;
-    }
-
     public String getContent() {
         return content;
     }
