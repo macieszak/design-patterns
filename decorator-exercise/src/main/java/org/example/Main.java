@@ -14,6 +14,6 @@ public class Main {
         System.out.println("\nNowy posiłek: ");
         Meal potatoMealWithChickenAndSauce = new SauceMealDecorator(new ChickenMealDecorator(new PotatoMeal()));
         potatoMealWithChickenAndSauce.prepareMeal();
-        
+
     }
 }
