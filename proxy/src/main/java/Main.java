@@ -16,6 +16,7 @@ public class Main {
             sg.initialize();
             savedGames.add(sg);
         }
+
         return savedGames;
     }
 
